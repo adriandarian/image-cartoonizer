@@ -1,0 +1,9 @@
+version: "3.8"
+
+services: 
+    cartoonizer:
+        image: imagecartoonizer:latest
+        container_name: image_cartoonizer
+        build: .
+        volumes: 
+            - .:/app/src
